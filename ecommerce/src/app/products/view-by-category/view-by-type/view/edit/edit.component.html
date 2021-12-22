@@ -1,0 +1,41 @@
+<div class="container">
+    <form [formGroup]="prod">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" [value]="product.name" formControlName="name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Type</label>
+        <input type="text" class="form-control" [value]="product.type" formControlName="type">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Category</label>
+        <input type="text" class="form-control" [value]="product.category" formControlName="category">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="text" class="form-control" [value]="product.price" formControlName="price">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Seller</label>
+        <input type="text" class="form-control" [value]="product.seller" formControlName="seller">
+      </div>
+
+      <div class="mb-3">
+        <label  class="form-label">Product Image </label>
+        <input type="text" class="form-control" [value]="product.product_image" formControlName="product_image">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Product Information</label>
+        <input type="text" class="form-control" [value]="product.product_info" formControlName="product_info">
+      </div>
+
+      <a routerLink="../../view"><button type="button" class="btn btn-primary" (click)="setUser()">Edit Product</button></a>
+
+    </form>
+  </div>

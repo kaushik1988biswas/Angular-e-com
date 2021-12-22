@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <div class="container">
+      <form [formGroup]="formObj">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="name">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Type</label>
+          <!-- <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="type"> -->
+          <select formControlName="type" class="form-control">
+            <option value="mobile">Mobile</option>
+            <option value="womens">Women</option>
+            <option value="washing machine">Washing Machine</option>
+            <option value="men">Men</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Category</label>
+          <!-- <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="category"> -->
+          <select formControlName="type" class="form-control">
+            <option value="fashion">Fashion</option>
+            <option value="electronics">Electronics</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="text" class="form-control"  aria-describedby="emailHelp" formControlName="price">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Seller</label>
+          <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="seller">
+        </div>
+
+        <div class="mb-3">
+          <label  class="form-label">Product Image </label>
+          <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="product_image">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Product Information</label>
+          <input type="text" class="form-control" aria-describedby="emailHelp" formControlName="product_info">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="setUser(formObj)">Add Product</button>
+
+      </form>
+    </div>
+
+  </div>
+  <div class="col-4"></div>
+</div>

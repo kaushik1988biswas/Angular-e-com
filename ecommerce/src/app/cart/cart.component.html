@@ -1,0 +1,13 @@
+<div class="row">
+  <div *ngFor="let product of products" class="col-xl-3 col-lg-3 col-md-4 col-sm-12 mt-4">
+      <div class="card" style="width: 18rem;">
+          <img src={{product.product_image}} (click)="sendCategory(product)" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}} {{product.price | currency:'INR'}}</h5>
+            <p class="card-text">{{product.product_info}}</p>
+            <p #type class="card-text">{{product.type}}</p>
+            <a  routerLink="../cart" class="btn btn-primary" (click)="deleteproduct(product.id)">Delete from Cart</a>
+          </div>
+        </div>
+  </div>
+</div>
